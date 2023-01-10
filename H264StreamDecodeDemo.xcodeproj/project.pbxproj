@@ -13,6 +13,14 @@
 		BE64F7D2295CAC63003DF2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE64F7D0295CAC63003DF2AE /* Main.storyboard */; };
 		BE64F7D4295CAC64003DF2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE64F7D3295CAC64003DF2AE /* Assets.xcassets */; };
 		BE64F7D7295CAC64003DF2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE64F7D5295CAC64003DF2AE /* LaunchScreen.storyboard */; };
+		BE64F7DF295CAC7C003DF2AE /* H264NALU.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64F7DE295CAC7C003DF2AE /* H264NALU.swift */; };
+		BE64F7E1295CAC88003DF2AE /* H264NALUParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64F7E0295CAC88003DF2AE /* H264NALUParser.swift */; };
+		BE64F7E3295CACA1003DF2AE /* AVCCExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64F7E2295CACA1003DF2AE /* AVCCExtractor.swift */; };
+		BE64F7E5295CACAE003DF2AE /* H264StreamToFileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64F7E4295CACAE003DF2AE /* H264StreamToFileConverter.swift */; };
+		BE64F7E7295CACBE003DF2AE /* H264VTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64F7E6295CACBE003DF2AE /* H264VTDecoder.swift */; };
+		BEE03452296DA35100D4B328 /* stream.h264 in Resources */ = {isa = PBXBuildFile; fileRef = BEE03451296DA35100D4B328 /* stream.h264 */; };
+		BEE03454296DA37200D4B328 /* downscaled.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BEE03453296DA37200D4B328 /* downscaled.mp4 */; };
+		BEE03458296DA87900D4B328 /* original.mov in Resources */ = {isa = PBXBuildFile; fileRef = BEE03457296DA87900D4B328 /* original.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		BE64F7D3295CAC64003DF2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE64F7D6295CAC64003DF2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE64F7D8295CAC64003DF2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE64F7DE295CAC7C003DF2AE /* H264NALU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264NALU.swift; sourceTree = "<group>"; };
+		BE64F7E0295CAC88003DF2AE /* H264NALUParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264NALUParser.swift; sourceTree = "<group>"; };
+		BE64F7E2295CACA1003DF2AE /* AVCCExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCCExtractor.swift; sourceTree = "<group>"; };
+		BE64F7E4295CACAE003DF2AE /* H264StreamToFileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264StreamToFileConverter.swift; sourceTree = "<group>"; };
+		BE64F7E6295CACBE003DF2AE /* H264VTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264VTDecoder.swift; sourceTree = "<group>"; };
+		BEE03451296DA35100D4B328 /* stream.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = stream.h264; sourceTree = "<group>"; };
+		BEE03453296DA37200D4B328 /* downscaled.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = downscaled.mp4; sourceTree = "<group>"; };
+		BEE03457296DA87900D4B328 /* original.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = original.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		BE64F7C9295CAC63003DF2AE /* H264StreamDecodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEE03451296DA35100D4B328 /* stream.h264 */,
+				BEE03453296DA37200D4B328 /* downscaled.mp4 */,
+				BEE03457296DA87900D4B328 /* original.mov */,
 				BE64F7CA295CAC63003DF2AE /* AppDelegate.swift */,
 				BE64F7CC295CAC63003DF2AE /* SceneDelegate.swift */,
 				BE64F7CE295CAC63003DF2AE /* ViewController.swift */,
@@ -63,6 +82,11 @@
 				BE64F7D3295CAC64003DF2AE /* Assets.xcassets */,
 				BE64F7D5295CAC64003DF2AE /* LaunchScreen.storyboard */,
 				BE64F7D8295CAC64003DF2AE /* Info.plist */,
+				BE64F7DE295CAC7C003DF2AE /* H264NALU.swift */,
+				BE64F7E0295CAC88003DF2AE /* H264NALUParser.swift */,
+				BE64F7E2295CACA1003DF2AE /* AVCCExtractor.swift */,
+				BE64F7E4295CACAE003DF2AE /* H264StreamToFileConverter.swift */,
+				BE64F7E6295CACBE003DF2AE /* H264VTDecoder.swift */,
 			);
 			path = H264StreamDecodeDemo;
 			sourceTree = "<group>";
@@ -128,6 +152,9 @@
 				BE64F7D7295CAC64003DF2AE /* LaunchScreen.storyboard in Resources */,
 				BE64F7D4295CAC64003DF2AE /* Assets.xcassets in Resources */,
 				BE64F7D2295CAC63003DF2AE /* Main.storyboard in Resources */,
+				BEE03458296DA87900D4B328 /* original.mov in Resources */,
+				BEE03452296DA35100D4B328 /* stream.h264 in Resources */,
+				BEE03454296DA37200D4B328 /* downscaled.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE64F7CF295CAC63003DF2AE /* ViewController.swift in Sources */,
+				BE64F7E3295CACA1003DF2AE /* AVCCExtractor.swift in Sources */,
+				BE64F7E7295CACBE003DF2AE /* H264VTDecoder.swift in Sources */,
+				BE64F7DF295CAC7C003DF2AE /* H264NALU.swift in Sources */,
 				BE64F7CB295CAC63003DF2AE /* AppDelegate.swift in Sources */,
+				BE64F7E1295CAC88003DF2AE /* H264NALUParser.swift in Sources */,
+				BE64F7E5295CACAE003DF2AE /* H264StreamToFileConverter.swift in Sources */,
 				BE64F7CD295CAC63003DF2AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +327,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +356,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
